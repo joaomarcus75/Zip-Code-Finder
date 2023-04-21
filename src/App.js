@@ -1,7 +1,17 @@
+import {useState} from 'react'
 import { FiSearch } from 'react-icons/fi'
 import './style.css';
+import React from 'react';
 
 function App() {
+
+  const[input,setInput]= useState('');
+  
+  function handleSearch()
+  {
+    alert("input value " + input);
+  }
+
   return (
     <div className="container">
       <h1 className="title">Zip Code Finder</h1>
@@ -10,11 +20,13 @@ function App() {
       
       <input 
       type="text"
-      placeholder="Type the Zip Code.."
+      placeholder="Type the zip code.."
+      value={input}
+      onChange={(event)=>setInput(event.target.value)}
       />
 
 
-      <button className="buttonSearch">
+      <button className="buttonSearch" onClick={handleSearch}>
       <FiSearch size={25} color="#000"/>
       </button>
 
