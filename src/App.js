@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import {GiMagnifyingGlass} from 'react-icons/gi'
+import './style.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1 className="title">Zip Code Finder</h1>
+
+    <div className="containerInput">
+      
+      <input 
+      type="text"
+      placeholder="Type the Zip Code.."
+      />
+
+      <button className="buttonSearch">
+      <GiMagnifyingGlass size={25} color="#000"/>
+      </button>
+
+      <main className="main">
+       <h2>ZIP CODE: 12312123</h2>
+
+       <span>CLOTILDE'S SREETH 41</span>
+       <span>Complement: any thing</span>
+       <span>CHAVO VILLAGE</span>
+       <span>Colorado - USA</span>
+
+      </main>
+
     </div>
+
+
+
+
+    </div>
+    
   );
 }
 
