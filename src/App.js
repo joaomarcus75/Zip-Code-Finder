@@ -1,4 +1,4 @@
-import {GiMagnifyingGlass} from 'react-icons/gi'
+import { FiSearch } from 'react-icons/fi'
 import './style.css';
 
 function App() {
@@ -13,12 +13,15 @@ function App() {
       placeholder="Type the Zip Code.."
       />
 
+
       <button className="buttonSearch">
-      <GiMagnifyingGlass size={25} color="#000"/>
+      <FiSearch size={25} color="#000"/>
       </button>
 
+    </div>
+
       <main className="main">
-       <h2>ZIP CODE: 12312123</h2>
+       <h2>Zip Code: 12312123</h2>
 
        <span>CLOTILDE'S SREETH 41</span>
        <span>Complement: any thing</span>
@@ -26,9 +29,6 @@ function App() {
        <span>Colorado - USA</span>
 
       </main>
-
-    </div>
-
 
 
 
