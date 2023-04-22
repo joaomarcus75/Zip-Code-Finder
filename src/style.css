@@ -64,14 +64,17 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #d5cece;
+    
+    
     /* width: 50px; */
     border-radius: 8px;
 }
 
 .main h2{
-    margin: 16px 0;
-    font-size: 39px;
+    margin: 16px 1;
+    font-size: 25px;
+    padding: 5px 10px
 }
 
 .main{
